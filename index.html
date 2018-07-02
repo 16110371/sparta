@@ -1,141 +1,418 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
+<head>
 <title>SPARTA</title>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="menu.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap-3.1.1.min.css" rel='stylesheet' type='text/css' />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href='//fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+
+<link href="css/font-awesome.css" rel="stylesheet"> 
+
+</head>
 <body>
-
-
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">COMPANIES</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">JOBS <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">All job Listing</a>
-        <a href="#" class="w3-bar-item w3-button">Add New</a>
-        <a href="#" class="w3-bar-item w3-button">Job Categories</a>
-        </div>
-    </div>
-    <a href="login.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LOGIN</a>
-    <div class="topnav">
-    <div class="search-container">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container">
+	    <div class="navbar-header">
+	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+	        </button>
+	        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""/></a>
+	    </div>
+	    
+	    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
+	        <ul class="nav navbar-nav">
+		        <li class="dropdown">
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jobs<b class="caret"></b></a>
+		            <ul class="dropdown-menu">
+			            <li><a href="location.html">Jobs by Lokasi</a></li>
+			            <li><a href="Category.html">Jobs by Kategori</a></li>
+			            <li><a href="perusahaan.html">Jobs by Perusahaan</a></li>
+			            <li><a href="jobs.html">All Jobs</a></li>
+		            </ul>
+		        </li>
+		        <li class="dropdown">
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recruiters<b class="caret"></b></a>
+		             <ul class="dropdown-menu">
+			            <li><a href="login.html">Recruiter Updates</a></li>
+			            <li><a href="recruiters.html">Recruiters you are following</a></li>
+			            <li><a href="codes.html">Shortcodes</a></li>
+		             </ul>
+		        </li>
+		        <li class="dropdown">
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<b class="caret"></b></a>
+		            <ul class="dropdown-menu">
+			            <li><a href="jobs.html">Walk-ins</a></li>
+			            <li><a href="jobs.html">Bpo Jobs</a></li>
+			            <li><a href="jobs.html">Teaching Jobs</a></li>
+			            <li><a href="jobs.html">Diploma Jobs</a></li>
+			            <li><a href="jobs.html">Tech Support</a></li>
+			            <li><a href="jobs.html">Finance Jobs</a></li>
+			            <li><a href="jobs.html">Part time Jobs</a></li>
+			            <li><a href="jobs.html">Health Care</a></li>
+			            <li><a href="jobs.html">Hospitality</a></li>
+			            <li><a href="jobs.html">Internships</a></li>
+			            <li><a href="jobs.html">Research Jobs</a></li>
+			            <li><a href="jobs.html">Defence Jobs</a></li>
+		            </ul>
+		        </li>
+		        <li><a href="login.html">Login</a></li>
+		        <li><a href="resume.html">Upload Resume</a></li>
+	        </ul>
+	    </div>
+	    <div class="clearfix"> </div>
+	  </div>
+	    <!--/.navbar-collapse-->
+	</nav>
+<div class="banner">
+	<div class="container">
+		<div id="search_wrapper">
+		 <div id="search_form" class="clearfix">
+		 <h1>Cari Pekerjaan Anda</h1>
+		    <p>
+			 <input type="text" class="text" placeholder=" " value="Pencarian" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Pencarian';}">
+			 <input type="text" class="text" placeholder=" " value="Lokasi" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Lokasi';}">
+			 <label class="btn2 btn-2 btn2-1b"><input type="submit" value="CARI"></label>
+			</p>
+            <h2 class="title">wilayah &amp; kategori</h2>
+         </div>
+		 <div id="city_1" class="clearfix">
+			 <ul class="orange">
+			 <li>
+			 <a href="#">Danurejan</a>
+			 </li>
+			 <li>
+			 <a href="#">Gedong Tengen</a>
+			 </li>
+			 <li>
+			 <a href="#">Gondokusuman</a>
+			 </li>
+			 <li>
+			 <a href="#">Gondomanan</a>
+			 </li>
+			 <li>
+			 <a href="#">Jetis</a>
+			 </li>
+			 <li>
+			 <a href="#">Kotagede</a>
+			 </li>
+			 <li>
+			 <a href="#">Kraton</a>
+			 </li>
+			 <li>
+			 <a href="#">Mantrijeron</a>
+			 </li>
+			 </ul>
+			 <ul class="orange">
+			 <li>
+			 <a href="#">Mergangsan</a>
+			 </li>
+			 <li>
+			 <a href="#">Ngampilan</a>
+			 </li>
+			 <li>
+			 <a href="#"">Pakualaman</a>
+			 </li>
+			 <li>
+			 <a href="#">Pakualaman</a>
+			 </li>
+			 <li>
+			 <a href="#">Tegalrejo</a>
+			 </li>
+			 <li>
+			 <a href="#">Umbulharjo</a>
+			 </li>
+			 <li>
+			 <a href="#">Wirobrajan</a>
+			 </li>
+			 <li>
+			 <a href="#">Depok</a>
+			 </li>
+			 </ul>
+			 <ul class="blue">
+			 <li>
+			 <a href="#">Operator</a>
+			 </li>
+			 <li>
+			 <a href="#">Sales</a>
+			 </li>
+			 <li>
+			 <a href="#">Pelayan</a>
+			 </li>
+			 <li>
+			 <a href="#">Admin</a>
+			 </li>
+			 <li>
+			 <a href="#">Barista</a>
+			 </li>
+			 <li>
+			 <a href="#">OB</a>
+			 </li>
+			 <li>
+			 <a href="#">Asisten</a>
+			 </li>
+			 <li>
+			 <a href="#">Satpam</a>
+			 </li>
+			 </ul>
+	     </div>
+       </div>
+   </div> 
+</div>	
+<div class="container">
+  <div class="grid_1">
+	 <h3>Perusahaan</h3>
+	   <ul id="flexiselDemo3">
+	      <li><img src="images/c1.gif"  class="img-responsive" /></li>
+		  <li><img src="images/c2.gif"  class="img-responsive" /></li>
+		  <li><img src="images/c3.gif"  class="img-responsive" /></li>
+		  <li><img src="images/c4.gif"  class="img-responsive" /></li>
+		  <li><img src="images/c5.gif"  class="img-responsive" /></li>
+		  <li><img src="images/c6.gif"  class="img-responsive" /></li>	
+	    </ul>
+	    <script type="text/javascript">
+		 $(window).load(function() {
+			$("#flexiselDemo3").flexisel({
+				visibleItems: 6,
+				animationSpeed: 1000,
+				autoPlay:false,
+				autoPlaySpeed: 3000,    		
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+		    	responsiveBreakpoints: { 
+		    		portrait: { 
+		    			changePoint:480,
+		    			visibleItems: 1
+		    		}, 
+		    		landscape: { 
+		    			changePoint:640,
+		    			visibleItems: 2
+		    		},
+		    		tablet: { 
+		    			changePoint:768,
+		    			visibleItems: 3
+		    		}
+		    	}
+		    });
+		    
+		});
+	   </script>
+	   <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+	 </div>
+	 <div class="single">  
+	   <div class="col-md-4">
+	   	  <div class="col_3">
+	   	  	<h3>Jobs by Category</h3>
+	   	  	<ul class="list_2">
+	   	  		<li><a href="#">Railway Recruitment</a></li>
+	   	  		<li><a href="#">Air Force Jobs</a></li>		
+	   	  		<li><a href="#">Police Jobs</a></li>
+	   	  		<li><a href="#">Intelligence Bureau Jobs</a></li>		
+	   	  		<li><a href="#">Army Jobs</a></li>
+	   	  		<li><a href="#">Navy Jobs</a></li>		
+	   	  		<li><a href="#">BSNL Jobs</a></li>
+	   	  		<li><a href="#">Software Jobs</a></li>	
+	   	  		<li><a href="#">Research Jobs</a></li>								
+	   	  	</ul>
+	   	  </div>
+	 </div>
+	   <div class="col-md-8">
+	      <div class="col_1">
+   	        <div class="col-sm-4 row_2">
+				<a href="single.html"><img src="images/a1.jpg" class="img-responsive" alt=""/></a>
+			</div>
+			<div class="col-sm-8 row_1">
+				<h4><a href="single.html">It is a long established fact</a></h4>
+				<h6>SIt is a long <span class="dot">·</span> Jul. 31, 2015</h6>
+				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+				<div class="social">	
+					<a class="btn_1" href="#">
+						<i class="fa fa-facebook fb"></i>
+						<span class="share1 fb">Share</span>								
+					</a>
+					<a class="btn_1" href="#">
+						<i class="fa fa-twitter tw"></i>
+						<span class="share1">Tweet</span>								
+					</a>
+					<a class="btn_1" href="#">
+						<i class="fa fa-google-plus google"></i>
+						<span class="share1 google">Share</span>
+					</a>
+			   </div>
+			</div>
+			<div class="clearfix"> </div>
+		   </div>
+		   <div class="col_1">
+   	         <div class="col-sm-4 row_2">
+				<a href="single.html"><img src="images/a2.jpg" class="img-responsive" alt=""/></a>
+			</div>
+			<div class="col-sm-8 row_1">
+				<h4><a href="single.html">Lorem Ipsum is simply dummy</a></h4>
+				<h6>SIt is a long <span class="dot">·</span> Jul. 31, 2015</h6>
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+				<div class="social">	
+					<a class="btn_1" href="#">
+						<i class="fa fa-facebook fb"></i>
+						<span class="share1 fb">Share</span>								
+					</a>
+					<a class="btn_1" href="#">
+						<i class="fa fa-twitter tw"></i>
+						<span class="share1">Tweet</span>								
+					</a>
+					<a class="btn_1" href="#">
+						<i class="fa fa-google-plus google"></i>
+						<span class="share1 google">Share</span>
+					</a>
+			   </div>
+			</div>
+			<div class="clearfix"> </div>
+		   </div>
+		   <div class="col_1">
+   	        <div class="col-sm-4 row_2">
+				<a href="single.html"><img src="images/a3.jpg" class="img-responsive" alt=""/></a>
+			</div>
+			<div class="col-sm-8 row_1">
+				<h4><a href="single.html">There are many variations</a></h4>
+				<h6>SIt is a long <span class="dot">·</span> Jul. 31, 2015</h6>
+				<p>YBut I must explain to you how all this mistaken idea of denouncing pleasure.</p>
+				<div class="social">	
+					<a class="btn_1" href="#">
+						<i class="fa fa-facebook fb"></i>
+						<span class="share1 fb">Share</span>								
+					</a>
+					<a class="btn_1" href="#">
+						<i class="fa fa-twitter tw"></i>
+						<span class="share1">Tweet</span>								
+					</a>
+					<a class="btn_1" href="#">
+						<i class="fa fa-google-plus google"></i>
+						<span class="share1 google">Share</span>
+					</a>
+			   </div>
+			</div>
+			<div class="clearfix"> </div>
+		   </div>
+		   <div class="col_1">
+   	         <div class="col-sm-4 row_2">
+				<a href="single.html"><img src="images/a4.jpg" class="img-responsive" alt=""/></a>
+			</div>
+			<div class="col-sm-8 row_1">
+				<h4><a href="single.html">Contrary to popular belief</a></h4>
+				<h6>SIt is a long <span class="dot">·</span> Jul. 31, 2015</h6>
+				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti.</p>
+				<div class="social">	
+					<a class="btn_1" href="#">
+						<i class="fa fa-facebook fb"></i>
+						<span class="share1 fb">Share</span>								
+					</a>
+					<a class="btn_1" href="#">
+						<i class="fa fa-twitter tw"></i>
+						<span class="share1">Tweet</span>								
+					</a>
+					<a class="btn_1" href="#">
+						<i class="fa fa-google-plus google"></i>
+						<span class="share1 google">Share</span>
+					</a>
+			   </div>
+			</div>
+			<div class="clearfix"> </div>
+		   </div>
+		   <div class="col_1">
+   	         <div class="col-sm-4 row_2">
+				<a href="single.html"><img src="images/a5.jpg" class="img-responsive" alt=""/></a>
+			</div>
+			<div class="col-sm-8 row_1">
+				<h4><a href="single.html">At vero eos et accusamus</a></h4>
+				<h6>SIt is a long <span class="dot">·</span> Jul. 31, 2015</h6>
+				<p>On the other hand, we denounce with righteous indignation and dislike men.</p>
+				<div class="social">	
+					<a class="btn_1" href="#">
+						<i class="fa fa-facebook fb"></i>
+						<span class="share1 fb">Share</span>								
+					</a>
+					<a class="btn_1" href="#">
+						<i class="fa fa-twitter tw"></i>
+						<span class="share1">Tweet</span>								
+					</a>
+					<a class="btn_1" href="#">
+						<i class="fa fa-google-plus google"></i>
+						<span class="share1 google">Share</span>
+					</a>
+			   </div>
+			</div>
+			<div class="clearfix"> </div>
+		   </div>
+		   <div class="col_2">
+   	         <div class="col-sm-4 row_2">
+				<a href="single.html"><img src="images/a6.jpg" class="img-responsive" alt=""/></a>
+			</div>
+			<div class="col-sm-8 row_1">
+				<h4><a href="single.html">On the other hand</a></h4>
+				<h6>SIt is a long <span class="dot">·</span> Jul. 31, 2015</h6>
+				<p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+				<div class="social">	
+					<a class="btn_1" href="#">
+						<i class="fa fa-facebook fb"></i>
+						<span class="share1 fb">Share</span>								
+					</a>
+					<a class="btn_1" href="#">
+						<i class="fa fa-twitter tw"></i>
+						<span class="share1">Tweet</span>								
+					</a>
+					<a class="btn_1" href="#">
+						<i class="fa fa-google-plus google"></i>
+						<span class="share1 google">Share</span>
+					</a>
+			   </div>
+			  </div>
+			<div class="clearfix"> </div>
+		   </div>
+	   </div>
+	   <div class="clearfix"> </div>
+	 </div>
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="col-md-3 grid_3">
+			<h4>Navigate</h4>
+			<ul class="f_list f_list1">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="login.html">Sign In</a></li>
+				<li><a href="login.html">Join Now</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+			<ul class="f_list">
+				<li><a href="features.html">Features</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="jobs.html">Post a Job</a></li>
+			</ul>
+			
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+</div>
+<div class="footer_bottom">	
+  <div class="container">
+    <div class="col-sm-2">
+  	</div>
+  	<div class="col-sm-2">
+  	</div>
+  	<div class="col-sm-2">
+  	</div>
+  	<div class="clearfix"> </div>
+	<div class="copy">
+		<p>Powered by RAKALAP</a> </p>
+	</div>
   </div>
 </div>
-  </div>
-</div>
-
-
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large">JOBS</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large">COMPAINES</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">MERCH</a>
-</div>
-
-
-<div class="gambar-content" style="max-width:1400px;margin-top:0px">
-
-  
-  <div class="mySlides w3-display-container w3-center">
-    <img src="home.jpg" style="width:100%">
-    <div class="w3-display-topmiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h1>Discover life after graduation, here.</h1>
-       
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="home2.jpg" style="width:100%">
-    <div class="w3-display-topmiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h1>Discover life after graduation, here.</h1>
-         
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="home3.jpg" style="width:100%">
-    <div class="w3-display-topmiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h1>Discover life after graduation, here.</h1>
-          
-    </div>
-  </div>
-
-  
-  <div id="ticketModal" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal w3-center w3-padding-32"> 
-        <span onclick="document.getElementById('ticketModal').style.display='none'" 
-       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
-      </header>
-      <div class="w3-container">
-        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="How many?">
-        <p><label><i class="fa fa-user"></i> Send To</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="Enter email">
-        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
-        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
-      </div>
-    </div>
-  </div>
-
-
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">RAKALAP</a></p>
-</footer>
-
-<script>
-
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4000);    
-}
-
-
-function myFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-
-
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
-
 </body>
-</html>
+</html>	
