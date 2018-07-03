@@ -1,9 +1,3 @@
-/*
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
-*/
 h4, h5, h6,
 h1, h2, h3 {margin-top: 0;}
 ul, ol {margin: 0;}
@@ -233,7 +227,7 @@ h2.title {
 }
 .search_form1 input[type="submit"]{
     padding: 8px 12px;
-    background-color:#f15f43;
+    background-color:black;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
@@ -677,7 +671,7 @@ i.icon_1:hover, span.icon_text:hover{
 	font-size: 1.1em;
 }
 .location_box1 h6 a{
-	color:#f15f43;
+	color:#2185C5;
 	text-transform: capitalize;
 }
 span.m_1 {
@@ -717,7 +711,7 @@ span.m_2{
     color: rgb(219, 0, 0);
 }
 .login-btn input[type="submit"]{
-    background:#2185C5;
+    background:black;
     color: #FFF;
     font-size: 15px;
     font-weight: 400;
@@ -732,7 +726,7 @@ span.m_2{
     -o-border-radius: 2px;
 }
 .login-btn input[type="submit"]:hover{
-	background:#f15f43;
+	background:#2185C5;
 }
 .login-bottom h3 {
     font-size: 20px;
@@ -1013,8 +1007,8 @@ h4.m_1{
 	margin:4em 0 0 0;
 }
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
-    background-color:#f15f43 !important;
-    border-color:#f15f43 !important;
+    background-color:black !important;
+    border-color:black !important;
 }
 .pagination>li {
     display: inline-block;
@@ -1056,7 +1050,7 @@ h6.title a{
 }
 .jobs_follow .date, .jobs_right .date{
     display: inline-block;
-    background:#f15f43;
+    background:#2185C5;
     padding: 2px;
     line-height: 16px;
     font-size: 14px;
@@ -1131,14 +1125,14 @@ a.btn_1.fa.fa-star-o.icon_2:hover{
 }
 .btn-default, .widget-content input[type="button"] {
     padding-bottom: 3px;
-    border-bottom: 2px solid #2185C5;
-    background: #2185C5;
+    border-bottom: 2px solid black;
+    background: black;
     color: #ffffff;
-    border-color:#2185C5;
+    border-color:black;
 }
 .btn-default:hover{
-    background-color:#f15f43;
-    border-color:#f15f43;
+    background-color:#2185C5;
+    border-color:#2185C5;
     color:#fff;
 }
 .modal-body {
@@ -1623,7 +1617,7 @@ input.btn.btn-primary.btn-sm:hover{
     font-weight: normal;
     padding: 10px 20px;
     text-transform: uppercase;
-    background:#2185C5;
+    background:black;
     display: inline-block;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
@@ -1635,7 +1629,7 @@ input.btn.btn-primary.btn-sm:hover{
     outline: none;
 }
 .form-submit1 input[type="submit"]:hover{
-	background:#f15f43;
+	background:#2185C5;
 }
 /*-- contact --*/
 .addr p:first-child {
